@@ -29,14 +29,15 @@ const Testimonial = (props) => {
     setIndex(randomIndex);
   }
   return (
-    <div>
-        <div>
+    <div className="w-[85vw] md:w-[700px] bg-white flex flex-col
+    justify-center items-center mt-10 p-10 transition-all duration-700 hover:shadow-xl">
+        <div >
           {
             <Card review={reviews[index]}></Card>
           }
         </div>
 
-    <div className="flex  text-3xl mt-5 gap-3 text-violet-400
+    <div className="flex  text-3xl mt-5 py-5 gap-3 text-violet-400
     font-bold mx-auto">
         <button 
         onClick={leftShiftHandler}
